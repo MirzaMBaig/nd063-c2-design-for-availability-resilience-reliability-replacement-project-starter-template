@@ -1,0 +1,19 @@
+Availability Estimate
+
+Write a paragraph or two describing the achievable Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for this Multi-AZ, multi-region database in terms of:
+
+1. Minimum RTO for a single AZ outage
+A
+A.The RTO can last from a few minutes to several hours.
+The Single-AZ instance is not the best fit for production workloads where high availability is required.
+However, it can be a good fit for development or testing purposes where applications do not require high availability, automatic failover, or low RTO/RPO.
+
+Minimum RTO for a single region outage
+A. In the event of Availability Zone failure, your workload automatically fails over to standby instances in the same region. The failover typically takes 60–120 seconds.
+Minimum RPO for a single AZ outage
+A. Due to the lack of standby instances, a Single-AZ instance cannot failover during an AZ outage. The RPO with an Amazon RDS Single-AZ instance is typically 5 minutes,
+which is based on the timeout interval for copying transaction logs to Amazon S3.
+This time may vary due to open transactions, engine specific settings, loss of network connectivity to Amazon S3, and instance class (network/disk/heavy workload) limits.
+
+Minimum RPO for a single region outage
+There

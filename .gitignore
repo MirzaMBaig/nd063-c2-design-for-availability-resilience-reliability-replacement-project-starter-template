@@ -1,0 +1,10 @@
+creds.sh
+**/.terrafrom**
+.idea
+**/terrafrom**.*
+/terraform/terraform.tfstate
+/terraform/terraform.tfstate.backup
+/terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/5.46.0/darwin_amd64/terraform-provider-aws_v5.46.0_x5
+/secure/test-server-1.pem
+/terraform/udacity_plan
+/terraform/.terraform.lock.hcl
